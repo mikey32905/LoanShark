@@ -57,7 +57,6 @@ function displayLoanDetails(monthlyPayment, principle, totalInterest, totalCost)
 
 //display amortization Table
 function displayAmortizationTable(principle, monthlyPayment, terms, interest){
-    //let templateRows = "";
     let newBalance = principle;
     let totalInterest = 0;
     let tablebody = document.getElementById("results");
