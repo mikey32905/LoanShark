@@ -68,7 +68,7 @@ function displayAmortizationTable(principle, monthlyPayment, terms, interest){
         let tableRow = document.importNode(templateRow.content, true);
 
         let interestPayment = newBalance * (interest/1200);
-        totalInterest += interest;
+        totalInterest += interestPayment;
         let principalPayment = monthlyPayment - interestPayment;
         newBalance = newBalance - principalPayment;
      
